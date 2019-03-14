@@ -53,7 +53,7 @@ class PictureCross():
         return grid_changed
 
     def convert_to_list(self, col):
-        col_to_list[]
+        col_to_list = []
         for row in self.grid:
             col_to_list.append(row[col])
         return col_to_list
