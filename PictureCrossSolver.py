@@ -25,8 +25,8 @@ class PictureCross():
         grid_changed = False
         for segment in n_list:
             filled_squares = filled_squares + segment
-            filled_square +=1
-        if filled_squares == height:
+            filled_squares +=1
+        if filled_squares == self.height:
             grid_changed = True
             current_grid = 0
             # row is 1, col is 0
@@ -66,7 +66,7 @@ class PictureCross():
                     self.solved_rows[row] = 1
                 if (self.solved_rows[row] == 0):
                     self.basic_fill(row, self.r_list[row], 1)
-            for col in range(len(self.c_list))):
+            for col in range(len(self.c_list)):
                 col_to_list = self.convert_to_list(col)
                 if "X" not in col_to_list:
                     self.solved_cols[col] = 1
